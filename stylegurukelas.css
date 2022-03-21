@@ -797,3 +797,21 @@ div#tooltipkd1header {
   
   display:block;
 }
+/* cobates */
+
+input.inprpp{
+  display:none;
+}
+input[class=inprpp]+label.lblinrpp {
+  color: #000;
+  cursor: pointer
+}
+
+input[class=inprpp]:checked+label.lblinrpp::before {
+  content: " \2705"
+}
+
+input[class=inprpp]:checked+label.lblinrpp {
+  color: #00f;
+  background-color: #ff0
+}
