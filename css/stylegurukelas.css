@@ -892,3 +892,10 @@ label.labrad_custom{
 .tabelsppd td:nth-child(2){
   border-right:.5pt solid black
 }
+
+.garis table td {
+  border:0;
+  border-collapse: collapse;
+  line-height: 5px;
+  
+}
