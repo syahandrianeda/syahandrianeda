@@ -539,7 +539,7 @@ width:100%;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  border:0;
+  border:0
 }
 .flag:after{
   content: "";
@@ -562,9 +562,6 @@ width:100%;
   
   /* border-left: 30px solid transparent; */
   border-right: 100px solid transparent;
- 
-  
-
 }
 
 
@@ -612,7 +609,7 @@ div.denom {
   height: 250px;
   width: 350px;
 }
-#tooltipkd1 .badge_kd, #tooltipkdmapel .badge_mapel{
+#tooltipkd1 .badge_kd, #tooltipkdmapel .badge_mapel,#tooltipMuatanMapelTematik .rppbadge_kd{
   margin:3px;
   padding:3px;
   cursor:pointer;
@@ -623,7 +620,7 @@ div.denom {
   font-size: 10px;
 }
 #tooltiptabel, #tooltiptabelall, #tooltipkd1,#tooltipkdmapel,#tooltipkaldik0, #tooltipkaldik1, 
-#tooltipkaldik2, #tooltipkaldik3, #tooltipkaldik4, #tooltipHBE,
+#tooltipkaldik2, #tooltipkaldik3, #tooltipkaldik4, #tooltipHBE,#tooltipkalendernontematik, #tooltipMuatanMapelTematik,#tooltipketikanrpp,
 #tooltipkaldik5{
   position: absolute;
   display: none;
@@ -676,6 +673,29 @@ div.denom {
   
   display:block;
 }
+.tooltiparahatast{
+  content: "";
+  position:absolute;
+  
+  /* position tooltip correctly */
+  /* left:0;
+  margin-left:-20px; */
+  /* margin-left: 0; */
+  left : 200px;
+ 
+  /* vertically center */
+  top:-10px;
+  transform:translateY(-50%);
+ 
+  /* the arrow */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid black;
+  
+  display:block;
+}
 .tooltiparahkanan{
   content: "";
   position:absolute;
@@ -699,7 +719,7 @@ div.denom {
   
   display:block;
 }
-#tooltiptabel:after, #tooltiptabelall:after, #tooltipkd1:after{
+#tooltiptabel:after, #tooltiptabelall:after, #tooltipkd1:after, #tooltipMuatanMapelTematik:after,#tooltipkalendernontematik:after{
   content: "";
   position:absolute;
   
@@ -722,8 +742,8 @@ div.denom {
 #tooltipkaldikheader1,
 #tooltipkaldikheader2,
 #tooltipkaldikheader3,
-#tooltipkaldikheader4, #tooltipHBEheader,
-#tooltipkaldikheader5
+#tooltipkaldikheader4, #tooltipHBEheader, #tooltipMuatanMapelTematikheader, #tooltipketikanrppheader,
+#tooltipkaldikheader5,#tooltipkalendernontematikheader
 {
   cursor:move;
 }
@@ -744,9 +764,13 @@ div#tooltipkd1header {
   width: 200px;
 }
 
-#tooltipkaldik0,#tooltipkaldik1,#tooltipkaldik2,#tooltipkaldik3,#tooltipkaldik4,
-#tooltipkaldik5{
+#tooltipkaldik0,#tooltipkaldik1,#tooltipkaldik2,#tooltipkaldik3,#tooltipkaldik4, #tooltipMuatanMapelTematik,
+#tooltipkaldik5,#tooltipkalendernontematik{
   width: 350px;
+}
+#tooltipketikanrpp{
+  width:530px;
+  
 }
 .tooltiparahkiri0,.tooltiparahkiri1,.tooltiparahkiri2,.tooltiparahkiri3,.tooltiparahkiri4,
 .tooltiparahkiri5{
@@ -833,4 +857,38 @@ input[class=inprpp]:checked+label.lblinrpp::before {
 input[class=inprpp]:checked+label.lblinrpp {
   color: #00f;
   background-color: #ff0
+}
+input.rad_custom {
+  width:20px;height:20px;position:relative;top:5px;
+}
+label.labrad_custom{
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tabelsppd{
+  border-collapse: collapse; 
+}
+.tabelsppd tr{
+  border-left:0;
+  border-right:0;
+}
+.tabelsppd tr:first-child{
+  border-top:5px double black;
+}
+.tabelsppd tr:last-child{
+  border-bottom:.5pt solid black;
+}
+.tabelsppd td{
+  border-top:.5pt solid black;
+  padding:5px 15px;
+  vertical-align: top;
+  text-align: top;
+}
+.tabelsppd td > ol {
+  margin-top:-3px;
+  margin-left: -20px;
+}
+.tabelsppd td:nth-child(2){
+  border-right:.5pt solid black
 }
