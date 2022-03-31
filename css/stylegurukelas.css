@@ -899,3 +899,36 @@ label.labrad_custom{
   line-height: 5px;
   
 }
+
+.prevsppd_isiresume>p{
+  text-decoration-line: underline;
+  text-decoration-thickness: .5pt;
+  line-clamp:5px;
+  /* border-top:.5pt solid gainsboro; */
+}
+#keyboard_ketikan{
+  max-width: 1000px;
+  position: absolute;
+  display: none;
+  border:1px solid black;
+  padding: 2px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(75, 75, 75);
+  z-index: 9995;
+ 
+}
+.visibel {
+  visibility: hidden;
+  height: 25px;
+  border-bottom:.5pt solid rgb(206, 206, 206)
+}
+.garisbuku {
+    -webkit-text-decoration-line: underline; /* Safari */
+    text-decoration-line: underline; 
+    text-decoration-color: rgb(206, 206, 206);
+    text-decoration-thickness: .5pt;
+    text-underline-offset:6px;
+    line-height:1.5;
+    border-bottom:.5pt solid rgb(206, 206, 206);
+    text-align:justify;
+}
