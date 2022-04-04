@@ -932,3 +932,7 @@ label.labrad_custom{
     border-bottom:.5pt solid rgb(206, 206, 206);
     text-align:justify;
 }
+
+.bgsekolah {
+  background: url('/img/sdnratujaya1-transparent.png') no-repeat;
+}
