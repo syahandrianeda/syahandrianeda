@@ -1010,7 +1010,7 @@ label.labrad_custom{
   /* border-collapse: collapse; */
 }
 .patokan_tabelformatljk th{
-  background-color: green;
+  background-color: red;
   color: white;
 }
 .patokan_tabelformatljk tr, .patokan_tabelformatljk th, .patokan_tabelformatljk td{
